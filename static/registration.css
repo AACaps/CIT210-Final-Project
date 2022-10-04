@@ -1,0 +1,278 @@
+@import url(reset.css);
+@import url(navigation.css);
+
+body {
+    background-image: url(/static/assets/login-image-blur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.registration-container {
+    background-color: var(--container-color);
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+
+    --container-color: #252525;
+}
+
+label {
+    color: #fdefff;
+}
+
+#credit, #pay {
+    color: #000;
+}
+
+.header {
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header-title {
+    display: flex;
+}
+
+.header-two p {
+    margin-left: 20px;
+}
+
+/* .logo {
+    width: 200px;
+    overflow: hidden;
+} */
+
+
+/* Gym logo image */
+
+.logo img {
+    width: 50%;
+    margin: 0.5em 0;
+    /* Please DO NOT use height! */
+}
+
+.form {
+    justify-content: center;
+    gap: 0.4em;
+    padding: 1em 0em;
+    margin: 30px 30px 30px 25px;
+}
+
+
+
+/*---------------+ 
+|  Top Section   | 
++----------------*/
+
+.top-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85em;
+}
+
+.top-input {
+    font-size: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.6em 1em;
+}
+
+
+/*-----------------+ 
+|  Middle Section  | 
++------------------*/
+
+.middle-section {
+    /* display: grid;
+    grid-template-columns: 50% 50%; */
+    /* gap: 1em; */
+    width: 92%;
+    align-items: center;
+    /* margin-left: ; */
+    margin: 30px 30px 30px 25px;
+    
+}
+
+
+/* Left */
+
+.left {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0.3em;
+}
+
+.memberships-title{
+    margin-left: 14%;
+    font-size: 25px;
+}
+
+.membership-opt-drop {
+    display: flex;
+    width: 100%;
+    font-size: larger;
+    margin-left: 22%;
+}
+
+.membership-dropdown {
+    background-color: var(--accent-color-2);
+    font-size: 0.7rem;
+    padding: 0.6em 1em;
+    border-radius: 5px;
+    /* border: none; */
+    width: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: large;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    --accent-color-2: #FCCD12;
+}
+
+.membership-dropdown:hover {
+    background-color: #000;
+    color: var(--accent-color-2);
+    transition: 200ms ease-in-out;
+
+    --accent-color-2: #FCCD12;
+}
+
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.payment-type {
+    background-color: #fff;
+    padding: 0.3em 1em;
+    border-radius: 5px;
+}
+
+.payment-type:first-of-type {
+    margin-bottom: 1em;
+}
+
+.pay-opt-drop {
+    width: 100%;
+}
+
+.pay-opt-drop select {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 95%;
+    padding: 0.5em 1em;
+}
+
+
+/* Right */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.3em;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input {
+    border-radius: 3px;
+    border: none;
+    width: 85%;
+    padding: 0.6em 1em;
+    font-size: 0.7rem;
+}
+
+
+/*-----------------+ 
+|  Bottom Section  | 
++------------------*/
+
+.purchase-container {
+    background-color: var(--accent-color-2);
+    padding: 1em 1em;
+    border-radius: 5px;
+
+    --accent-color-2: #FCCD12;
+}
+
+.purchase-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.purchase-description p {
+    font-size: 0.8rem;
+    opacity: 60%;
+    width: 55%;
+}
+
+
+/*-------------------+ 
+|  Section Divider   | 
++--------------------*/
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.division {
+    border-bottom: 2px solid black;
+    margin: 15px 0 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+
+/*---------------+ 
+|  Place Order   | 
++----------------*/
+
+.purchase-button {
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    padding: 0.4em 0.5em;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--accent-color-2);
+    color: #000;
+
+    --accent-color-2: #FCCD12;
+}
+
+.wrapper:hover {
+    background-color: #FDEFFF;
+    color: black;
+    transition: 200ms ease-in-out;
+}

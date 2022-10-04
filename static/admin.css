@@ -1,0 +1,132 @@
+@import url(reset.css);
+
+html {
+    overflow-y: scroll; overflow-x: hidden;
+}
+
+body {
+    position: absolute;
+    background-color: #2A2A2A;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2A2A2A;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FCCD12;
+}
+
+.admin-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.admin-page {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-top {
+    background-color: white;
+    height: 23rem;
+    width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3em;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stats-container {
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+.stats-container p {
+    margin-top: 1em;
+    margin-left: 4.1em;
+}
+
+.stats-container span {
+    margin-left: .5em;
+    font-size: 8rem;
+}
+
+.svg-container svg {
+    width: 100%;
+}
+
+.svg-container {
+    overflow: visible;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+
+/* Bottom Containers */
+.admin-bottom {
+    align-items: center;
+    max-height: max-content;
+    text-align: center;
+}
+
+.table-containers {
+    width: 100%;
+}
+
+.users-table {
+    width: 100%;
+    table-layout:fixed;
+}
+
+.table-head {
+    background-color: #FCCD12;
+}
+
+.table-head tr th {
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+}
+
+.table-body tr td {
+    padding: 1em 1em;
+}
+
+td {
+    color: #FDFEFF;
+}
+
+
+/* Buttons */
+
+.admin-actions {
+    padding: 0.5em 0.8em;
+    background-color: #FCCD12;
+    color: black;
+    border-radius: 10px;
+}
+
+.admin-logout {
+    position: fixed;
+    right: 0.5%;
+    top: 0.5%;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: #FCCD12;
+}

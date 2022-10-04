@@ -1,0 +1,89 @@
+@import url(reset.css);
+@import url(navigation.css);
+
+body {
+    background: #121212;
+}
+
+#back-button {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em 1em;
+    color: #FDFEFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.membership-container {
+    width: 85%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: visible;
+    transition: 500ms ease;
+}
+
+.card {
+    width: 300px;
+    max-width: 90%;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #FCCD12;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+    box-shadow: 0px 0px 66px -13px rgba(0, 0, 0, 0.69);
+    -webkit-box-shadow: 0px 0px 66px -13px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: 0px 0px 66px -13px rgba(0, 0, 0, 0.69);
+}
+
+.membership-type {
+    background-color: #5C5C5C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: 500ms ease;
+    text-align: center;
+}
+
+.card:hover .membership-type {
+    height: 2rem;
+    padding: 0.5em 0;
+}
+
+.membership-type span {
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 500ms ease;
+    color: #FCCD12;
+}
+
+.card:hover .membership-type>span {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.list {
+    margin: 2em 2.5em;
+}
+
+.list li {
+    font-size: 0.8rem;
+}
+
+.price h1 i {
+    font-size: 4rem;
+}
+
+.price h1 {
+    margin: 0%;
+}

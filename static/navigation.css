@@ -1,0 +1,35 @@
+.navigation-bar {
+    background-color: var(--accent-color-2);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    --accent-color-2: #FCCD12;
+}
+
+.navigation-left,
+.navigation-right ul {
+    display: flex;
+    padding: 0.5em 1em;
+    gap: 0.5em;
+}
+
+ul {
+    cursor: pointer;
+}
+
+.navigation-left {
+    gap: 1em;
+}
+
+.contact,
+.opening-time {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.contact p,
+.opening-time p {
+    font-size: 0.7rem;
+}

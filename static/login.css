@@ -1,0 +1,166 @@
+@import url(reset.css);
+
+/* Those with ! in comments - please update them later */
+
+body {
+    background-image: url(/static/assets/login-image-blur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* .background-image {
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+} */
+
+
+/*------------------+ 
+    |  Login Container  | 
+    +-------------------*/
+
+.login {
+    background-color: var(--container-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+
+    --container-color: #252525;
+}
+
+.gym-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color-2);
+    height: 4rem;
+    width: 100%;
+
+    --accent-color-2: #FCCD12;
+}
+
+.gym-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 150px;
+}
+
+/* Gym logo image */
+
+.gym-logo img {
+    width: 50%;
+    /* Please DO NOT use height! */
+    text-align: center;
+}
+
+/*--------+ 
+|  Input  | 
++---------*/
+
+.input-container {
+    width: 90%;
+    overflow: visible;
+    margin-bottom: 1em;
+}
+
+.input {
+    padding: 0.65em 0.5em;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 1em;
+    width: 95.5%;
+}
+
+.input::placeholder {
+    margin-left: 1em;
+    font-size: 0.9em;
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--black);
+    color: #fff;
+    position: relative;
+    border: none;
+    border-radius: 7px;
+    padding: 0.65em 0.5em;
+    margin-bottom: 1.5em;
+    cursor: pointer;
+
+    /* Colors */
+    --font-color: #222;
+    --black: #000;
+    --background-color: #aaa;
+    --accent-color: #CFA616;
+    --accent-color-2: #FCCD12;
+}
+
+.btn.btn-background-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--accent-color-2);
+
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.btn.btn-background-slide:hover::before,
+.btn.btn-background-slide:focus::before {
+    transform: scaleX(1);
+}
+
+.btn.btn-background-slide:hover {
+    color: var(--black);
+    transition: 400ms ease-in-out;
+}
+
+.btn.btn-background-slide {
+    z-index: 1;
+}
+
+/*-------------------+ 
+|  Non member notes  | 
++--------------------*/
+
+.non-member-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.non-member-note a {
+    font-size: 0.8rem;
+    color: var(--accent-color-2);
+    --accent-color-2: #FCCD12;
+    text-decoration: underline;
+    margin: .3em 0 .5em 0;
+}
+
+.non-member-note a:last-of-type {
+    margin: 0;
+}
+
+.non-member-note p {
+    font-size: 0.8rem;
+    color: #FDFEFF;
+}
